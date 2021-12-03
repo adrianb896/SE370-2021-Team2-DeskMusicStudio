@@ -732,17 +732,17 @@ public class deskMusicStudio extends javax.swing.JFrame {
     private void playBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playBtnMouseClicked
         // TODO add your handling code here:
         user.play();
-    }//GEN-LAST:event_playBtnMouseClicked
+    }
 
     private void stopBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_stopBtnMouseClicked
         // TODO add your handling code here:
         user.stop();
-    }//GEN-LAST:event_stopBtnMouseClicked
+    }
 
     private void pauseBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pauseBtnMouseClicked
         // TODO add your handling code here:
         user.pause();
-    }//GEN-LAST:event_pauseBtnMouseClicked
+    }
 
     private void repeatBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_repeatBtnMouseClicked
         // TODO add your handling code here:
@@ -760,13 +760,13 @@ public class deskMusicStudio extends javax.swing.JFrame {
             String image = currentPath + imagePath + "\\repeat.png";
             repeatBtn.setIcon(new ImageIcon(image));
         }
-    }//GEN-LAST:event_repeatBtnMouseClicked
+    }
 
     private void apptitleMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_apptitleMousePressed
         // TODO add your handling code here:
         xM = evt.getX();
         yM = evt.getY();
-    }//GEN-LAST:event_apptitleMousePressed
+    }
 
     private void apptitleMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_apptitleMouseDragged
         // TODO add your handling code here:
@@ -774,17 +774,17 @@ public class deskMusicStudio extends javax.swing.JFrame {
         int y = evt.getYOnScreen();
         
         this.setLocation(x - xM, y - yM);
-    }//GEN-LAST:event_apptitleMouseDragged
+    }
 
     private void quitBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitBtnMouseClicked
         // TODO add your handling code here:
         this.dispose();
-    }//GEN-LAST:event_quitBtnMouseClicked
+    }
 
     private void settingBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_settingBtnMouseClicked
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(this, "Settings dialog will display here");
-    }//GEN-LAST:event_settingBtnMouseClicked
+    }
 
     private void loadBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loadBtnMouseClicked
         // TODO add your handling code here:
@@ -800,7 +800,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
                 currentDirectory = songFile.getAbsolutePath();
                 songNameDisplay.setText("Playing ... " + songFile.getName());
             } 
-    }//GEN-LAST:event_loadBtnMouseClicked
+    }
 
     private void apptitleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_apptitleMouseClicked
         // TODO add your handling code here:
@@ -819,27 +819,27 @@ public class deskMusicStudio extends javax.swing.JFrame {
                 apptitle.setText(applicationName);
             }
         }
-    }//GEN-LAST:event_apptitleMouseClicked
+    }
 
     private void volumedownBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volumedownBtnMouseClicked
         // TODO add your handling code here:
         volumedownControl(0.1);
-    }//GEN-LAST:event_volumedownBtnMouseClicked
+    }
 
     private void volumeupBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volumeupBtnMouseClicked
         // TODO add your handling code here:
         volumeupControl(0.1);
-    }//GEN-LAST:event_volumeupBtnMouseClicked
+    }
 
     private void volumefullBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_volumefullBtnMouseClicked
         // TODO add your handling code here:
         volumeControl(1.0);
-    }//GEN-LAST:event_volumefullBtnMouseClicked
+    }
 
     private void muteBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_muteBtnMouseClicked
         // TODO add your handling code here:
         volumeControl(0.0);
-    }//GEN-LAST:event_muteBtnMouseClicked
+    }
 
     private void saveBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveBtnMouseClicked
         // TODO add your handling code here:
@@ -868,13 +868,13 @@ public class deskMusicStudio extends javax.swing.JFrame {
                JOptionPane.showMessageDialog(this, "File Error: " + exception.getMessage());
           }
         }
-    }//GEN-LAST:event_saveBtnMouseClicked
+    }
 
     private void enterBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterBtnActionPerformed
         // TODO add your handling code here:
         int value = Integer.parseInt(enterVolValue.getText());
         volSlider.setValue(value);
-    }//GEN-LAST:event_enterBtnActionPerformed
+    }
    
     private void volSliderStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_volSliderStateChanged
         // TODO add your handling code here:
@@ -882,7 +882,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
        if (!volSlider.getValueIsAdjusting())
            return;
        
-    }//GEN-LAST:event_volSliderStateChanged
+    }
 
     private void cKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cKeyActionPerformed
         // TODO add your handling code here:
@@ -890,7 +890,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==cKey) {
             player.play("Ch");
         }
-    }//GEN-LAST:event_cKeyActionPerformed
+    }
 
     private void dKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dKeyActionPerformed
         // TODO add your handling code here:
@@ -898,7 +898,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==dKey) {
             player.play("Dh");
         }
-    }//GEN-LAST:event_dKeyActionPerformed
+    }
 
     private void eKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eKeyActionPerformed
         // TODO add your handling code here:
@@ -906,7 +906,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==eKey) {
             player.play("E");
         }
-    }//GEN-LAST:event_eKeyActionPerformed
+    }
 
     private void fKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fKeyActionPerformed
         // TODO add your handling code here:
@@ -915,7 +915,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
             player.play("F");
         }
 
-    }//GEN-LAST:event_fKeyActionPerformed
+    }
 
     private void gKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gKeyActionPerformed
         // TODO add your handling code here:
@@ -923,7 +923,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==gKey) {
             player.play("G");
         }
-    }//GEN-LAST:event_gKeyActionPerformed
+    }
 
     private void aKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aKeyActionPerformed
         // TODO add your handling code here:
@@ -931,7 +931,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==aKey) {
             player.play("A");
         }
-    }//GEN-LAST:event_aKeyActionPerformed
+    }
 
     private void bKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bKeyActionPerformed
         // TODO add your handling code here:
@@ -939,7 +939,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==bKey) {
             player.play("B");
         }
-    }//GEN-LAST:event_bKeyActionPerformed
+    }
 
     private void highCKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_highCKeyActionPerformed
         // TODO add your handling code here:
@@ -947,7 +947,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==highCKey) {
             player.play("C6");
         }
-    }//GEN-LAST:event_highCKeyActionPerformed
+    }
 
     private void cSharpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cSharpActionPerformed
         // TODO add your handling code here:
@@ -955,7 +955,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==cSharp) {
             player.play("C#");
         }
-    }//GEN-LAST:event_cSharpActionPerformed
+    }
 
     private void dSharpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dSharpActionPerformed
         // TODO add your handling code here:
@@ -963,7 +963,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==dSharp) {
             player.play("D#");
         }
-    }//GEN-LAST:event_dSharpActionPerformed
+    }
 
     private void fSharpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fSharpActionPerformed
         // TODO add your handling code here:
@@ -971,7 +971,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==fSharp) {
             player.play("F#");
         }
-    }//GEN-LAST:event_fSharpActionPerformed
+    }
 
     private void gSharpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gSharpActionPerformed
         // TODO add your handling code here:
@@ -979,7 +979,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==gSharp) {
             player.play("G#");
         }
-    }//GEN-LAST:event_gSharpActionPerformed
+    }
 
     private void aSharpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aSharpActionPerformed
         // TODO add your handling code here:
@@ -987,7 +987,7 @@ public class deskMusicStudio extends javax.swing.JFrame {
         if(evt.getSource()==aSharp) {
             player.play("A#");
         }
-    }//GEN-LAST:event_aSharpActionPerformed
+    }
 
     
     /**
